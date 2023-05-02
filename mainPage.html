@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>War Service Bureau</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section id="fade-in-section" class="fade-in">
+        <h1 style = "text-align: center; color: white" class = "fade-in-heading">War Service Bureau <br><br> Personal Correspondence from the Rutgers College War Service Bureau</h1>
+        <img src="https://newbrunswick.rutgers.edu/sites/default/files/2020-05/1859%20Old_Queens_Watercolor_Doolittle_crop_web.jpg" style = "display: block; margin: 0 auto; max-width: 1000px" class="fade-in-image">
+	</section>
+	<script>
+		var section = document.querySelector('#fade-in-section');
+		var image = document.querySelector('.fade-in-image');
+		var heading = document.querySelector('.fade-in-heading');
+		var opacity = 0;
+		var intervalID = setInterval(function() {
+			if (opacity < 1) {
+				opacity += 0.1;
+				section.style.opacity = opacity;
+				image.style.opacity = opacity;
+				heading.style.opacity = opacity;
+			} else {
+				clearInterval(intervalID);
+			}
+		}, 100);
+	</script>
+
+<div style="text-align: center;" font-family = "Times New Roman">
+    <h2 style = "text-align: center" class = "typing">About the project</h2>
+    <p style="max-width: 800px; margin: 0 auto; text-align: left; font-size: 22px; line-height: 1.25">The War Service Bureau of Rutgers College was established in August 1917 and continued its operations through the end of the war to June 1919. Its mission was to keep Rutgers students in contact with the college as well as with one another during the Great War. 
+      <br>
+      <br>
+      We invite you to explore selected correspondence from the War Service Bureau that has been transcribed, edited, and encoded by students of Rutgers New Brunswick and Rutgers Future Scholars. A disability studies approach has been taken to shed light on the subjects of trauma, illness, and the social construction of gender in a world that was rapidly changing. Editorial tooltips, displayed by hovering over underlined text, provide contextual information about people, places, and events. Wherever possible, letter anthologies are prefaced by short biographies of the Rutgers officers or enlisted men, accompanied by images or interactive correspondence maps.
+      <br>
+      <br>
+      This site is currently under development. At present, you will find fully edited versions of the correspondence for the alumni appearing in the table of contents. More material will follow as time permits. <a href="readMore.html">Read More...</a>
+    </p>
+    <br>
+  </div>
+
+<a href = "alumniNavigate.html">
+    <div class="card-container">
+        <div class="card">
+          <img src="https://sinclairnj.blogs.rutgers.edu/files/2018/06/may-june-300x191.jpg" alt="Card image">
+          <h3 style = "text-align: center">Alumni</h3>
+          <p style = "text-align: center; font-family: Arial"> Navigate the alumni by name</p>
+        </div>
+    </a>
+
+<a href = "all_Letters.html">
+        <div class="card-container">
+            <div class="card">
+              <img src="https://sinclairnj.blogs.rutgers.edu/files/2018/06/may-june-300x191.jpg" alt="Card image">
+              <h3 style = "text-align: center">Theme</h3>
+              <p style = "text-align: center; font-family: Arial"> Sort through every letter by theme</p>
+            </div>
+        </a>
+    
+
+</body>
+</html>
