@@ -21,8 +21,8 @@ II. Adding Tags to Letter
 
 	Tag Creation Template
 
-      <button class="tag" onclick="filterTag(‘love’)”>Love</button>
-      <button class="tag" onclick="filterTag(‘scenery’)”>Scenery</button>
+      <button class="tag" onclick="filterTag(‘all love travel’)”>Love</button>
+      <button class="tag" onclick="filterTag(‘all scenery’)”>Scenery</button>
 
 	   
 	  Note: The text in the ‘’ is what to use as your data-tag, the text in between the > and </button> is what will actually show up on the page as your label
@@ -30,11 +30,7 @@ II. Adding Tags to Letter
 
 	Creating a Letter + Tag Template
 
-	<div class="letter" data-tags=“love scenery”>
-         <h2>Letter 3</h2>
-         <p>Aliquam et enim sed neque dignissim porttitor.</p>
-      </div>
-
+    <div class="letter-item" data-tags="tag1 tag2">Letter 1</div>
 
 	Note: This snippet uses the tags love and scenery. Make sure that in data-tags the text used is the text written in the ‘’ and not the text that would show on the webpage after the >. You do not need to use commas or hyphens in between each tag, just spaces
 
