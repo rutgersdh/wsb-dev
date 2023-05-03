@@ -1,0 +1,29 @@
+<div class="letter">
+    <div class="letter-item" data-tags="tag1 tag2">Letter 1</div>
+    <div class="letter-item" data-tags="tag2 tag3">Letter 2</div>
+    <div class="letter-item" data-tags="tag1 tag3">Letter 3</div>
+</div>
+
+<button onclick="filterLetters('tag1')">Tag 1</button>
+<button onclick="filterLetters('tag2')">Tag 2</button>
+<button onclick="filterLetters('tag3')">Tag 3</button>
+
+<script>
+function filterLetters(tag) {
+    var letters = document.getElementsByClassName("letter-item");
+    for (var i = 0; i < letters.length; i++) {
+        var tags = letters[i].dataset.tags.split(" ");
+        if (tags.includes(tag)) {
+            letters[i].classList.remove("hidden");
+        } else {
+            letters[i].classList.add("hidden");
+        }
+    }
+}
+</script>
+
+<style>
+.hidden {
+    display: none;
+}
+</style>
