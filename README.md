@@ -5,7 +5,7 @@ I. Adding a Card
 	Add the following code template after each card’s </div>. Make sure that the code below is not copied into another alumni card’s <div> otherwise the page will not look as intended.
 
 	Card Code Template
- 
+ ```html
       <div class="card"> 
         <a href = “LINK TO PAGE“>
         <img src=“REPLACE WITH IMAGE LINK“ alt=“REPLACE WITH ALT IMAGE NAME>
@@ -13,7 +13,7 @@ I. Adding a Card
         <p>REPLACE WITH ALUMNI DESCRIPTION</p>
         </a>
       </div>
-
+```
 
 II. Adding Tags to Letter
 
